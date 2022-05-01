@@ -1,0 +1,78 @@
+::-webkit-scrollbar{
+  width: 0.6vw;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(8, 116, 116)
+}
+::-webkit-scrollbar-track{
+  background-color:silver;
+}
+body{
+  background: linear-gradient(to right, seagreen, #3a6186); 
+}
+.App {
+  text-align: center;
+  width: 500px;
+  height: 90vh;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 25px -10px #000;
+  overflow-y: scroll;
+}
+h1{
+  font-size: 40px;
+  padding: 1rem 0 1rem 0;
+  background-color: silver;
+  margin: 0 0 2rem 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#input-field{
+  height: 10px;
+  width: 300px;
+  padding:20px;
+}
+#add-btn{
+  margin-left: 1rem;
+  font-size: 25px;
+  border-radius: 50%;
+}
+#todos{
+  display: flex;
+  text-align: left;
+  padding: 17px 0 0 2rem;
+  font-size: 23px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.deleteIcon{
+  cursor: pointer;
+}
+.deleteIcon:hover{
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+}
+#todos p{
+  margin: 0 0 0 10px;
+}
+
+/* ******************** */
+@media only screen and (max-width: 600px) {
+  ::-webkit-scrollbar{
+    width: 1.3vw;
+  }
+  .App {
+    width: 400px;
+    height: 70vh;
+    margin: 5rem auto;
+    overflow-y: scroll;
+    /* border-radius: 20px; */
+  }
+  #input-field{
+    width: 250px;
+  }
+  #add-btn{
+    margin-left: 1rem;
+    font-size: 20px;
+    border-radius: 10%;
+  }
+}
